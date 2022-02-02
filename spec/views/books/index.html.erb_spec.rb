@@ -6,12 +6,14 @@ RSpec.describe "books/index", type: :view do
       Book.create!(
         title: "Title",
         author: "Author",
-        price: 2.5
+        price: 2.5,
+        published_date: DateTime.new(1999).to_s(:db)
       ),
       Book.create!(
         title: "Title",
         author: "Author",
-        price: 2.5
+        price: 2.5,
+        published_date: DateTime.new(1999).to_s(:db)
       )
     ])
   end
