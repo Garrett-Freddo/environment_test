@@ -5,7 +5,8 @@ RSpec.describe "books/show", type: :view do
     @book = assign(:book, Book.create!(
       title: "Title",
       author: "Author",
-      price: 2.5
+      price: 2.5,
+      published_date: DateTime.new(1999).to_s(:db)
     ))
   end
 
